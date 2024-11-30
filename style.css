@@ -1,0 +1,306 @@
+/* تنسيقات عامة */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px; /* لضبط العرض الأقصى */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+header .logo {
+    height: 300px; /* صغر حجم الشعار قليلاً */
+    width: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em; /* تصغير حجم العنوان */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* تغيير إلى inline-block لجعل العناصر تظهر بجانب بعضها */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em; /* تصغير حجم النص */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+.hero-section {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    padding: 60px 0; /* تقليل البادنج */
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.services-section, .gallery-section, .contact-section {
+    padding: 30px 0; /* تقليل البادنج */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    perspective: 1000px;
+}
+
+h2 {
+    color: #444;
+    font-size: 2em; /* تصغير حجم العنوان */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* إعادة الأيقونات لتصبح أفقية */
+}
+
+.service-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px; /* تقليل البادنج */
+    border-radius: 8px;
+    width: 45%; /* نفس عرض العنصر في معرض الأعمال */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    font-size: 1.5em; /* تصغير حجم الأيقونة */
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+.service-item h3 {
+    margin: 5px 0;
+    font-size: 1.2em; /* تصغير حجم النص */
+    color: #007BFF;
+}
+
+.service-item p {
+    color: #555;
+    font-size: 0.9em; /* تصغير حجم النص */
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: 30%; /* تقليل عرض العنصر */
+}
+
+.gallery-item img {
+    width: 100%; /* تأكد من أن الصور تأخذ العرض الكامل للعنصر */
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1em; /* تصغير حجم النص */
+    color: #666;
+}
+
+.contact-info li {
+    margin: 5px 0; /* تقليل الهامش */
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #007BFF;
+}
+
+/* قسم أرسل لنا رسالة */
+.contact-form {
+    margin-top: 20px; /* تقليل الهامش */
+    padding: 20px; /* تعديل البادنج */
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transform: translateZ(0);
+    max-width: 600px; /* ضبط عرض القسم */
+    margin: 0 auto;
+}
+
+.contact-form h3 {
+    margin-bottom: 10px; /* تقليل الهامش */
+    color: #007BFF;
+    font-size: 1.5em; /* ضبط حجم النص */
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 10px; /* تقليل الهامش */
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input, .form-group textarea {
+    width: calc(100% - 20px); /* ضبط العرض ليكون داخل المربع */
+    padding: 10px; /* تعديل البادنج */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: transform 0.3s;
+    font-size: 1em; /* ضبط حجم النص */
+    box-sizing: border-box; /* ضمان عدم تجاوز الحدود */
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    transform: translateZ(10px);
+}
+
+.submit-btn {
+    padding: 10px 20px; /* تعديل البادنج */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em; /* ضبط حجم النص */
+}
+
+/* واتساب أيقونة المتحركة */
+.whatsapp-float {
+    position: fixed;
+    width: 50px; /* تصغير الأيقونة */
+    height: 50px; /* تصغير الأيقونة */
+    bottom: 20px; /* تقليل المسافة من الأسفل */
+    right: 20px; /* تقليل المسافة من اليمين */
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px; /* تصغير حجم الأيقونة */
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    animation: bounce 2s infinite;
+}
+
+.whatsapp-float i {
+    margin-top: 13px; /* ضبط الهامش العلوي */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* رمز QR */
+.qr-code {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.qr-code img {
+    width: 100px; /* تصغير حجم الصورة */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* استعلامات الوسائط لجعل الموقع متجاوبًا */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .logo-container {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    header .logo {
+        height: 60px; /* تصغير الشعار أكثر */
+    }
+
+    header h1 {
+        font-size: 1.8em; /* تصغير حجم العنوان */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row; /* اجعل العناوين أفقية على الموبايل */
+        justify-content: center;
+        flex-wrap: wrap; /* اجعل العناوين تتوزع بشكل جيد */
+        gap: 5px; /* ضبط المسافة بين العناوين */
+    }
+
+    nav ul li {
+        margin: 5px 10px; /* ضبط الهامش بين العناوين */
+    }
+
+    .hero-section {
