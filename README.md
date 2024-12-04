@@ -1,6 +1,6 @@
  HEAD
 # my_Perpetual achievement_office
-ممكتب الإنجاز الدائم للخدمات العامة
+مكتب الإنجاز الدائم للخدمات العامة
 
 # my_Perpetual achievement_office
 مكتب الانجاز الدائم للخدمات العامة
